@@ -1,0 +1,113 @@
+body {
+    margin: 0 0 0 0;
+    background-color: black;
+}
+
+#container {
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.header, .header-right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-right {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo-png {
+    width: 70px;
+    height: 50px;
+}
+
+.header-box {
+    color: white;
+    padding: 10px;
+}
+
+#box-header {
+    background-color: black;
+    grid-column: 1 / 8;
+    grid-row: 1;
+}
+
+#box-title {
+    display: flex;
+    background-color: black;
+    grid-column: 1 / 8 ;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+.box-title-1 {
+    text-align: end;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#box-movie, #box-movie-2{
+    background-color: black;
+    grid-column: 1 / 8 ;
+    grid-row: 3/5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-movie-image {
+    height: 100%;
+    width: 16vw;
+    margin: 20px;
+    transition: all 0.5s;
+}
+
+.box-movie-image:hover {
+    height: 220px;
+    width: 20vw;
+}
+
+#box-title-2 {
+    background-color: black;
+    grid-column: 1 / 8 ;
+}
+
+#box-movie-2 {
+    display: flex;
+    background-color: black;
+    grid-column: 1 / 8 ;
+    grid-row: 6 / 8;
+}
+
+#movie-1 {
+    background-image: url(../images/peli1.jpg);
+    background-size: cover;
+}
+
+#movie-2 {
+    background-image: url(../images/peli2.jpg);
+    background-size: cover;
+}
+
+#movie-3 {
+    background-image: url(../images/peli3.jpg);
+    background-size: cover;
+}
+
+#movie-4 {
+    background-image: url(../images/peli4.jpg);
+    background-size: cover;
+}
+
+#movie-5 {
+    background-image: url(../images/peli5.jpg);
+    background-size: cover;
+}
